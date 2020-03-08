@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./js/validation.js">
+</head>
+
+<body>
+  <div class="container mt-3" style="border:1px solid #aaaa; padding-left: 0px; padding-right: 0px;">
+    <nav class="navbar navbar-light alert-success">
+      <label>Payment for Example</label>
+    </nav>
+    <div class="container mt-3">
+      <nav class="navbar navbar-light alert-danger">
+        <label>Some fields are missing</label>
+      </nav>
+      <form action="/action_page.php">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCardNumbers">Card Number</label>
+            <input type="text" class="form-control" id="inputCardNumber" placeholder="xxxx-xxxx-xxxx" required>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCseguro4">CCV</label>
+            <input type="text" class="form-control" id="inputCCv" placeholder="0000" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputAmount4">Amount</label>
+            <input type="Amount" class="form-control" id=inputAmount placeholder="InsertAmount" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Name</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Insert your Name" required>
+
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress2">Last Name</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Insert your Last Name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" required>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option>Opcion 1</option>
+              <option>Opcion 2</option>
+              <option>Opcion 3</option>
+              <option>Opcion 4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputZip">Postal Code</label>
+            <input type="text" class="form-control" id="inputPostalCode" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress">We Accept</label><br>
+            <div class="fondo bg-secondary d-flex justify-content-between pt-2" style="width: 185px; height: 30px;">
+              <input type="radio" id="visa" name="pago" value="visa">
+              <i class="fa fa-cc-visa" aria-hidden="true"></i>
+              <input type="radio" id="mastercard" name="pago" value="mastercard">
+              <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+              <input type="radio" id="paypal" name="pago" value="paypal">
+              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+              <input type="radio" id="amex" name="pago" value="amex">
+              <i class="fa fa-cc-amex" aria-hidden="true"></i>
+            </div><br>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress2">Comment</label><br>
+            <textarea id="w3mission" rows="6" cols="73"></textarea>
+          </div>
+        </div>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <button type="button" class="btn btn-secondary mr-3">Cancel</button>
+      <button class="btn btn-primary" type="submit">Send</button>
+    </div>
+    </form>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
